@@ -1,0 +1,399 @@
+body {
+    margin: 0;
+}
+.containerAccueil {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(10, 10, 12);
+}
+.accorcheAccueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.accorcheAccueil h1, .accorcheAccueil h3 ,.accorcheAccueil a{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+.accorcheAccueil h1{
+    font-size: 3.5em;
+}
+.accorcheAccueil h3 {
+    font-size: 2em;
+    background: linear-gradient(90deg, rgba(0,204,248,255), rgba(254,0,184,255), rgba(254,1,65,255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 40px 0;
+}
+.lienAccueil {
+    padding: 20px 80px;
+    font-size: 1.8em;
+    text-decoration: none;
+    position: relative;
+}
+.lienAccueil:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 30px; 
+    padding: 2px;
+    background:linear-gradient(90deg, rgba(0,204,248,255), rgba(254,0,184,255), rgba(254,1,65,255)); 
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            mask: linear-gradient(#fff 0 0) content-box,
+}
+.gifFlècheAccueil {
+    position: absolute;
+    bottom: 3vh;
+}
+/*Section "À propos de moi" */
+.aProposDeMoi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    background-color: rgb(26,26,30);
+    padding: 20vh 0;
+}
+.containerAProposDeMoi {
+    display: flex;
+}
+.photoBouton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.photoMoi {
+    width: 400px;
+    height: auto;
+}
+.boutonTelechargerCV {
+    text-decoration: none;
+    color: white;
+    margin-top: 5vh;
+    padding: 2vh 7vw;
+    border: 2px solid white;
+    border-radius: 20px;
+    transition: background-color 0.45s ease, color 0.45s ease;
+}
+.boutonTelechargerCV:hover {
+    background-color: white;
+    color: rgba(18,18,22,255);;
+}
+.contenuAProposDeMoi {
+    margin-left: 3vw;
+}
+.contenuAProposDeMoi h1, .contenuAProposDeMoi p {
+    color: white;
+}
+.contenuAProposDeMoi h1 {
+    font-size: 2.5em;
+    width: fit-content;
+}
+.contenuAProposDeMoi > p  {
+    width: 45vw;
+    color: rgba(255,255,255,0.6);
+    font-size: 1.2em;
+    line-height: 25px;
+    margin-bottom: 3vh;
+}
+.containerCompetencesPresentation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);   
+}
+.competencePresentation {
+    display: flex;
+    align-items: center;
+    width: 93%;
+    margin-bottom: 20px
+}
+.competencePresentation p {
+    margin-left: 1vw;
+}
+.divBorder {
+    padding: 18px;
+    position: relative;
+}
+.divBorder:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 30px; 
+    padding: 2px;
+    background:linear-gradient(90deg, rgba(0,204,248,255), rgba(254,0,184,255), rgba(254,1,65,255)); 
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            mask: linear-gradient(#fff 0 0) content-box,
+}
+.logoDevFrontBack, .logoCyber, .logoAI, .logoReseau {
+    height: auto;
+    width: 50px;
+}
+.mail, .tel {
+    display: flex;
+}
+.logoEmail, .logoTel {
+    height: auto;
+    width: 50px;
+    margin-right: 10px;
+}
+/*Section "Expérience"*/
+.experiencePro {
+    color: white;
+    font-family: sans-serif;
+    background-color: rgb(18,18,22);
+    padding: 20vh 0;
+}
+.containerExperinence {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containerExperinence h1 {
+    text-align: center;
+    width: 20vw;
+    margin: 0 0 10vh 0;
+    font-size: 40px;
+    position: relative;
+}
+.containerExperinence h1:after {
+    content: "";
+    position: absolute; 
+    bottom: -3.5vh;
+    left: 0;
+    right: 0;
+    margin: auto; 
+    width: 30%;
+    height: 2px; 
+    background-color: rgb(200,200,200); 
+}
+.blocsExp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 10vw;
+}
+.experience {
+    width: 35vw;
+    height: auto;
+    margin-bottom: 5vh;
+    font-size: x-large;
+    position: relative;
+    padding: 1.5vh;
+}
+.experience:before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    padding: 2px;
+    background:linear-gradient(90deg, rgba(0,204,248,255), rgba(254,0,184,255), rgba(254,1,65,255)); 
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            mask: linear-gradient(#fff 0 0) content-box,
+}
+.dateEtAdresseExp {
+    font-style: italic;
+    font-size: 20px;
+    background: linear-gradient(90deg, rgba(0,204,248,255), rgba(254,0,184,255), rgba(254,1,65,255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+.experience h4 {
+    font-size: 30px;
+}
+.experience p {
+    color: rgba(255,255,255,0.8);
+}
+/*Section Mon Parcours*/
+.monParcours {
+    color: white;
+    font-family: sans-serif;
+    background-color: rgb(26,26,30);
+    padding: 20vh 0;
+}
+.containerParcours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containerParcours h1 {
+    text-align: center;
+    width: 20vw;
+    margin: 0 0 10vh 0;
+    font-size: 40px;
+    position: relative;
+}
+.containerParcours h1:after {
+    content: "";
+    position: absolute; 
+    bottom: -3.5vh;
+    left: 0;
+    right: 0;
+    margin: auto; 
+    width: 35%;
+    height: 2px; 
+    background-color: rgb(200,200,200); 
+}
+.parcours {
+    position: relative;
+    z-index: 1;
+}
+.parcours::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+}
+.parcours, .parcours li {
+    padding: 0;
+    margin: 0;
+}
+.parcours li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15vh;
+}
+.parcours span {
+    font-size: 22px;
+}
+.parcours p {
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(255,255,255,0.8);
+}
+.descriptionParcoursGauche{
+    width: 500px;
+    text-align: end;
+}
+.descriptionParcoursDroit {
+    width: 500px;
+}
+.dateDroit, .dateGauche {
+    position: relative;
+    font-size: 24px;
+}
+.dateDroit:after {
+    content: "";
+    position: absolute; 
+    bottom: -1.4vh;
+    right: 0;
+    width: 20%;
+    height: 1px; 
+    background-color: rgb(200,200,200); 
+}
+.dateGauche:after {
+    content: "";
+    position: absolute; 
+    bottom: -1.4vh;
+    left: 0;
+    width: 20%;
+    height: 1px; 
+    background-color: rgb(200,200,200); 
+}
+.logoEcole {
+    margin: 0 2vw;
+    height: auto;
+    width: 300px;
+}
+.elementPourAjuster {
+    width: 500px;
+}
+/*Section footer*/
+footer {
+    background-color: rgba(18,18,22,255);
+    color: white;
+    font-family: sans-serif;
+    padding: 4vh 0 2vh;
+}
+.partiesFooter {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 8vw;
+}
+.descriptionRapide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+}
+.iconeLinkedin {
+    width: 40px;
+    height: auto;
+}
+.partiesFooter h2 {
+    position: relative;
+    margin: 0 0 20px;
+}
+.sections h2:after {
+    content: "";
+    position: absolute; 
+    bottom: -0.7vh;
+    left: 0;
+    right: 0;
+    width: 4vw;
+    height: 2px; 
+    background-color: rgb(200,200,200); 
+}
+.listeSections {
+    padding-left: 0;    
+    list-style-position: inside;
+}
+.listeSections a {
+    color: white;
+    text-decoration: none;
+}
+.listeSections li a:hover {
+    text-decoration: underline;
+}
+.coordonnesRecap {
+    padding-left: 80px;
+    width: 25vw;
+}
+.coordonnesRecap h2:after {
+    content: "";
+    position: absolute; 
+    bottom: -0.7vh;
+    left: 0;
+    right: 0;
+    width: 4vw;
+    height: 2px; 
+    background-color: rgb(200,200,200); 
+}
+.mailFooter, .telFooter {
+    display: flex;
+    align-items: center;
+}
+.logoEmailFooter, .logoTelFooter {
+    height: 40px;
+    width: 40px;
+}
+.coordonnesRecap p {
+    margin: 0;
+    margin-left: 15px;
+}
+footer span {
+    display: flex;
+    background-color: rgb(180,180,180); 
+    width: 80%;
+    height: 0.9px;
+    margin: 20px auto 20px;
+}
+.signature {
+    text-align: center;
+}
